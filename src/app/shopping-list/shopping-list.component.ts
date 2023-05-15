@@ -10,5 +10,7 @@ export class ShoppingListComponent {
   ingredients : ingredient[] = [
     new ingredient('apple',10)
   ]
-
+  onIngredientAdded(ingredient: ingredient){
+    this.ingredients.push(ingredient)
+  }
 }
